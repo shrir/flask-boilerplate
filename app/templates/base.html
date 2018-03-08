@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+        {% if title %}
+        <title>{{ title }} - Flask Boilerplate</title>
+        {% else %}
+        <title>Flask Boilerplate</title>
+        {% endif %}
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
